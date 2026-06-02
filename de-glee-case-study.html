@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DE GLEE Beauty Ecommerce Case Study</title>
+    <meta
+      name="description"
+      content="DE GLEE Beauty Ecommerce case study: a mobile-first beauty storefront with secure customer auth, cart persistence, and admin product management."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/new%20portfolio%20image.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-icon brand-photo" aria-hidden="true"></span>
+        <span class="brand-text">Favour AI First Software Engineer</span>
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#work">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" id="case-study-hero">
+        <div class="section-inner">
+          <p class="section-label">Case Study</p>
+          <h1 class="section-title">DE GLEE Beauty Ecommerce</h1>
+          <p class="section-lead">
+            A mobile-first, luxury beauty storefront built with plain HTML, CSS, JavaScript,
+            and a lightweight Node.js backend for secure account, product, and order handling.
+          </p>
+          <div class="project-meta">
+            <span>Beauty &amp; Cosmetics</span>
+            <span>Frontend + Node.js Backend</span>
+            <span>JSON persistence</span>
+          </div>
+          <div class="project-links">
+            <a class="link-primary" href="https://de-glee-e-commerce-website.vercel.app/" target="_blank" rel="noreferrer">Live website →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint">
+        <div class="section-inner">
+          <h2>Project Overview</h2>
+          <p>
+            DE GLEE is a mobile-first ecommerce storefront designed for a luxury beauty brand.
+            It showcases curated skincare and body care products while delivering a polished,
+            accessible shopping experience that can be deployed without a build pipeline.
+          </p>
+
+          <h3>Problem</h3>
+          <p>
+            The client needed a modern beauty storefront that highlights premium products,
+            supports customer login and cart persistence, enables secure owner product updates,
+            and stays lightweight for simple deployment.
+          </p>
+
+          <h3>Solution</h3>
+          <p>
+            I built a responsive frontend using plain HTML, CSS, and JavaScript, paired with
+            a minimal Node.js backend to support protected owner access, product CRUD, and
+            order collection.
+          </p>
+
+          <h3>Key Features</h3>
+          <ul class="check-list">
+            <li>Modern luxury storefront with hero sections, category browsing, and search.</li>
+            <li>Mobile-first responsive design with product quick-view and recommendation guidance.</li>
+            <li>Cart add/update functionality with persistence via <code>localStorage</code>.</li>
+            <li>Email sign in / sign up flow with cookie-based sessions for customers and admins.</li>
+            <li>Protected /admin dashboard for product management and image uploads.</li>
+            <li>Checkout flow saving orders to <code>data/orders.json</code> and payment instructions via WhatsApp.</li>
+          </ul>
+
+          <h3>Implementation Highlights</h3>
+          <ul class="check-list">
+            <li>Built a Node.js HTTP server with no external framework dependency.</li>
+            <li>Seeded product data automatically when <code>products.json</code> was missing.</li>
+            <li>Secured passwords with built-in <code>crypto.scryptSync</code>.</li>
+            <li>Managed sessions in-memory and stored authentication cookies securely.</li>
+            <li>Used JSON file storage for easy deployment and low maintenance.
+          </li>
+          </ul>
+
+          <h3>Business Value</h3>
+          <ul class="check-list">
+            <li>Launch-ready beauty storefront with owner-controlled catalog management.</li>
+            <li>Low-maintenance architecture that's easy to deploy and update.</li>
+            <li>Improved customer trust through secure login and polished shopping UX.</li>
+            <li>Flexible order pipeline with owner alerts and transfer instructions.
+          </li>
+          </ul>
+
+          <h3>Future Improvements</h3>
+          <ul class="check-list">
+            <li>Add real payment gateway integration such as Stripe or Paystack.</li>
+            <li>Replace demo checkout with live payment and order processing.</li>
+            <li>Add inventory tracking and order status management in admin.</li>
+            <li>Support social login and richer customer profiles.</li>
+            <li>Migrate from JSON storage to a database for scale.</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="link-primary" href="https://de-glee-e-commerce-website.vercel.app/" target="_blank" rel="noreferrer">Live website</a>
+            <a class="link-primary" href="index.html#work">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-icon brand-photo" aria-hidden="true"></span>
+        <span class="brand-text">Favour AI First Software Engineer</span>
+      </a>
+      <p>&copy; <span id="year"></span> Favour Osofisan — The Quiet Expert.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
