@@ -23,6 +23,11 @@
         <span class="brand-icon brand-photo" aria-hidden="true"></span>
         <span class="brand-text">Favour AI First Software Engineer</span>
       </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="site-nav" id="site-nav">
         <a href="index.html#work">Portfolio</a>
         <a href="index.html#contact">Contact</a>
@@ -123,9 +128,29 @@
         <span class="brand-icon brand-photo" aria-hidden="true"></span>
         <span class="brand-text">Favour AI First Software Engineer</span>
       </a>
-      <p>&copy; <span id="year"></span> Favour Osofisan — The Quiet Expert.</p>
+      <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
+        <div>
+          <h2 id="footer-newsletter-title">Newsletter</h2>
+          <p>Get occasional notes from Favour on web apps, AI tools, and portfolio builds.</p>
+        </div>
+        <form class="footer-newsletter-form" data-newsletter-form>
+          <label for="footer-newsletter-email">Email address</label>
+          <div class="footer-newsletter-row">
+            <input id="footer-newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+          <label class="consent-check" for="footer-newsletter-consent">
+            <input id="footer-newsletter-consent" name="consent" type="checkbox" value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)." required />
+            <span>I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime).</span>
+          </label>
+          <p class="newsletter-message" data-newsletter-message role="status" aria-live="polite"></p>
+          <a class="privacy-link" href="privacy.html">Privacy Policy</a>
+        </form>
+      </section>
+      <p>&copy; <span id="year"></span> Favour Osofisan - The Quiet Expert.</p>
     </footer>
 
+    <script src="supabase-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

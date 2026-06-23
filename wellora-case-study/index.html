@@ -40,7 +40,7 @@
           <p class="intro">
             Wellora is a Progressive Web Application designed to close a critical gap in senior
             health technology. It combines voice-controlled navigation, AI-powered personalization,
-            and accessibility-first design so adults aged 65+ can manage wellness more safely and
+            and accessibility-first design so adults aged 50+ can manage wellness more safely and
             independently.
           </p>
           <p class="intro">
@@ -54,7 +54,7 @@
           </div>
           <ul class="meta-list">
             <li><strong>Type:</strong> Senior wellness progressive web app</li>
-            <li><strong>Audience:</strong> Adults 65+, caregivers, families, and healthcare providers</li>
+            <li><strong>Audience:</strong> Adults 50+, caregivers, families, and healthcare providers</li>
             <li><strong>Status:</strong> MVP phase - active development</li>
           </ul>
         </div>
@@ -314,6 +314,34 @@
       </section>
     </main>
 
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="../index.html">
+        <span class="brand-mark brand-photo" aria-hidden="true"></span>
+        <span>Favour AI First Software Engineer</span>
+      </a>
+      <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
+        <div>
+          <h2 id="footer-newsletter-title">Newsletter</h2>
+          <p>Get occasional notes from Favour on web apps, AI tools, and portfolio builds.</p>
+        </div>
+        <form class="footer-newsletter-form" data-newsletter-form>
+          <label for="footer-newsletter-email">Email address</label>
+          <div class="footer-newsletter-row">
+            <input id="footer-newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+          <label class="consent-check" for="footer-newsletter-consent">
+            <input id="footer-newsletter-consent" name="consent" type="checkbox" value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)." required />
+            <span>I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime).</span>
+          </label>
+          <p class="newsletter-message" data-newsletter-message role="status" aria-live="polite"></p>
+          <a class="privacy-link" href="../privacy.html">Privacy Policy</a>
+        </form>
+      </section>
+      <p>&copy; <span id="year"></span> Favour Osofisan - The Quiet Expert.</p>
+    </footer>
+
+    <script src="../supabase-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

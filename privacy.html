@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Favour Osofisan</title>
+    <meta
+      name="description"
+      content="Privacy policy for Favour Osofisan's portfolio newsletter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/new%20portfolio%20image.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#hero" aria-label="Home">
+        <span class="brand-icon brand-photo" aria-hidden="true"></span>
+        <span class="brand-text">Favour AI First Software Engineer</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" id="privacy-policy">
+        <div class="section-inner">
+          <p class="section-label">Privacy Policy</p>
+          <h1 class="section-title">Newsletter Privacy Policy</h1>
+          <p class="section-lead">
+            This policy explains how newsletter signup information is handled on Favour
+            Osofisan's portfolio website.
+          </p>
+
+          <h2>What Data Is Collected</h2>
+          <p>
+            If you choose to subscribe to the newsletter, the only personal data requested is
+            your email address. Newsletter signup is optional and is not required to view or
+            use the website.
+          </p>
+
+          <h2>How The Data Is Used</h2>
+          <p>
+            Your email address is used only to send occasional updates from Favour Osofisan,
+            such as notes about web apps, AI tools, portfolio builds, and related project work.
+            Newsletter signups are stored in a Supabase database connected to this website.
+          </p>
+
+          <h2>Consent</h2>
+          <p>
+            The newsletter form includes an unticked consent checkbox. The form cannot be
+            submitted unless you check the box to confirm that you agree to receive occasional
+            emails from Favour Osofisan.
+          </p>
+
+          <h2>Sharing And Selling</h2>
+          <p>
+            Your email address is not sold, rented, or shared with third parties for marketing
+            purposes.
+          </p>
+
+          <h2>Unsubscribing Or Requesting Deletion</h2>
+          <p>
+            You can unsubscribe at any time or request deletion of your email address by
+            emailing <a class="link-primary" href="mailto:favourosofisan@gmail.com">favourosofisan@gmail.com</a>.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            For privacy questions, email
+            <a class="link-primary" href="mailto:favourosofisan@gmail.com">favourosofisan@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="index.html#hero">
+        <span class="brand-icon brand-photo" aria-hidden="true"></span>
+        <span class="brand-text">Favour AI First Software Engineer</span>
+      </a>
+      <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
+        <div>
+          <h2 id="footer-newsletter-title">Newsletter</h2>
+          <p>Get occasional notes from Favour on web apps, AI tools, and portfolio builds.</p>
+        </div>
+        <form class="footer-newsletter-form" data-newsletter-form>
+          <label for="footer-newsletter-email">Email address</label>
+          <div class="footer-newsletter-row">
+            <input id="footer-newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+          <label class="consent-check" for="footer-newsletter-consent">
+            <input id="footer-newsletter-consent" name="consent" type="checkbox" value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)." required />
+            <span>I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime).</span>
+          </label>
+          <p class="newsletter-message" data-newsletter-message role="status" aria-live="polite"></p>
+          <a class="privacy-link" href="privacy.html">Privacy Policy</a>
+        </form>
+      </section>
+      <p>&copy; <span id="year"></span> Favour Osofisan - The Quiet Expert. All rights reserved.</p>
+    </footer>
+
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
