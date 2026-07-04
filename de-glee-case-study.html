@@ -21,7 +21,7 @@
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Home">
         <span class="brand-icon brand-photo" aria-hidden="true"></span>
-        <span class="brand-text">Favour AI First Software Engineer</span>
+        <span class="brand-text">Favour Osofisan | AI Software Engineer</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span>
@@ -126,7 +126,7 @@
     <footer class="site-footer">
       <a class="brand brand--footer" href="index.html">
         <span class="brand-icon brand-photo" aria-hidden="true"></span>
-        <span class="brand-text">Favour AI First Software Engineer</span>
+        <span class="brand-text">Favour Osofisan | AI Software Engineer</span>
       </a>
       <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
         <div>
@@ -147,10 +147,21 @@
           <a class="privacy-link" href="privacy.html">Privacy Policy</a>
         </form>
       </section>
-      <p>&copy; <span id="year"></span> Favour Osofisan - The Quiet Expert.</p>
+      <p>&copy; <span id="year"></span> Favour Osofisan | AI Software Engineer.</p>
     </footer>
 
     <script src="supabase-config.js"></script>
     <script src="script.js"></script>
+    <script>
+      const yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+      document.querySelectorAll('.glow-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+          card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+        });
+      });
+    </script>
   </body>
 </html>

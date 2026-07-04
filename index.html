@@ -1,439 +1,842 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favour Osofisan | Websites &amp; Web Apps Developer</title>
-    <meta
-      name="description"
-      content="Favour Osofisan builds polished websites and web apps for brands, businesses, ecommerce, and AI-powered product ideas."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/new%20portfolio%20image.jpeg" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#hero" aria-label="Home">
-        <span class="brand-icon brand-photo" aria-hidden="true"></span>
-        <span class="brand-text">Favour AI First Software Engineer</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" id="site-nav">
-        <a href="#about">About</a>
-        <a href="#approach">Approach</a>
-        <a href="#services">Services</a>
-        <a href="#stack">Stack</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="hero section" id="hero">
-        <div class="hero-layout">
-          <div class="hero-content">
-            <span class="badge">Websites &amp; Web Apps Portfolio</span>
-            <h1>I build websites and web apps for brands, businesses, and product ideas</h1>
-            <p class="hero-copy">
-              I design and develop <strong>responsive websites, ecommerce storefronts, and practical web apps</strong>
-              with clean user experiences, strong frontend execution, and smart AI integrations when they add real value.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#work">
-                See Projects
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favour Osofisan | AI First Digital Transformation Consultant</title>
+  <meta name="description"
+    content="I help businesses leverage AI and modern software to automate operations, increase revenue, and create exceptional customer experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/new%20portfolio%20image.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Home">
+      <span class="brand-icon brand-photo" aria-hidden="true"></span>
+      <span class="brand-text">Favour Osofisan | AI Software Engineer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#what-i-build">What I Build</a>
+      <a href="#work">Case Studies</a>
+      <a href="#industries">Who I Work With</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <span class="badge">AI-Powered Business Solutions</span>
+          <h1>I build AI-powered software that helps businesses grow.</h1>
+          <p class="hero-copy">
+            From intelligent automation and AI assistants to modern websites and scalable web applications,
+            I design digital systems that solve real business problems-not just build software.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+2347064020576" id="book-call-btn">
+              Book a Discovery Call
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.15 6.15l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="btn btn-outline" href="#work">
+              View Case Studies
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <ul class="hero-pills" aria-label="Focus areas">
+            <li>AI Assistants</li>
+            <li>Business Automation</li>
+            <li>Internal Dashboards</li>
+            <li>SaaS Platforms</li>
+            <li>AI Integrations</li>
+          </ul>
+        </div>
+
+        <aside class="hero-portrait card glow-card tilt-3d" aria-label="Profile portrait">
+          <img class="portrait-image" src="images/new%20portfolio%20image.jpeg" alt="Portrait of Favour Osofisan" />
+          <p class="about-extra">
+            I help organizations modernize the way they work by integrating AI agents,
+            automating workflows, and building modern customer portals that drive growth.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About: The Transformation Partner -->
+    <section class="about section section-tint" id="about">
+      <div class="section-inner">
+        <h2 class="section-title">The Transformation Partner</h2>
+        <p class="section-lead">
+          I help organizations modernize the way they work using AI, automation, and thoughtfully designed software.
+          Whether it's improving customer experience, reducing repetitive work, or creating scalable digital products,
+          I build systems that create measurable business value.
+        </p>
+
+        <div class="about-layout">
+          <div class="about-cards">
+            <article class="mini-card glow-card">
+              <div class="mini-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v9A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-9Z"
+                    stroke="currentColor" stroke-width="1.8" />
+                  <path d="M8 21h8M10 18v3M14 18v3M4 8h16" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" />
                 </svg>
-              </a>
-              <a class="btn btn-outline" href="#contact">
-                Hire Me
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </div>
+              <h3>AI &amp; Automation Strategy</h3>
+              <p>Identifying operational bottlenecks and designing custom AI systems to automate processes and reduce
+                manual work.</p>
+            </article>
+            <article class="mini-card glow-card">
+              <div class="mini-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 4h8l4 4v12H4V4h4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  <path d="M16 4v4h4M8 13l-2 2 2 2M16 13l2 2-2 2M13 12l-2 6" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-              </a>
-            </div>
-            <ul class="hero-pills" aria-label="Focus areas">
-              <li>Business Websites</li>
-              <li>Web Apps</li>
-              <li>E-commerce</li>
-              <li>AI Features</li>
-            </ul>
+              </div>
+              <h3>AI &amp; Product Engineering</h3>
+              <p>Building production-ready software, custom chatbot agents, RAG engines, and scalable backend pipelines.
+              </p>
+            </article>
+            <article class="mini-card glow-card">
+              <div class="mini-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z"
+                    stroke="currentColor" stroke-width="1.8" />
+                  <path d="M8 8h8M8 12h5M8 16h3M15.5 14.5l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Business Value Delivery</h3>
+              <p>Delivering high-ROI systems focusing on cost reduction, operational speed, and exceptional customer
+                experience.</p>
+            </article>
           </div>
 
-          <aside class="hero-portrait card" aria-label="Profile portrait">
-            <img
-              class="portrait-image"
-              src="images/new%20portfolio%20image.jpeg"
-              alt="Portrait of Favour Osofisan"
-            />
-            <p class="about-extra">
-              I use modern tools to move quickly without sacrificing quality, from interface design
-              and responsive layouts to full-stack development and portfolio-ready case studies.
-            </p>
+          <aside class="code-panel glow-card" aria-label="Profile code snippet">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-filename">consultant.js</span>
+            </div>
+            <pre><code><span class="tok-keyword">const</span> consultant = {
+  <span class="tok-key">name</span>: <span class="tok-string">"Favour Osofisan"</span>,
+  <span class="tok-key">role</span>: <span class="tok-string">"AI Software Engineer"</span>,
+  <span class="tok-key">focus</span>: [<span class="tok-string">"AI Automation"</span>, <span class="tok-string">"Intelligent Software"</span>, <span class="tok-string">"Workflow Pipelines"</span>],
+  <span class="tok-key">mission</span>: <span class="tok-string">"Deliver high-ROI systems that solve business problems"</span>,
+  <span class="tok-key">availability</span>: <span class="tok-string">"Available for consulting &amp; strategy projects"</span>
+};</code></pre>
           </aside>
         </div>
-      </section>
 
-      <!-- About: The Quiet Expert -->
-      <section class="about section section-tint" id="about">
-        <div class="section-inner">
-          <h2 class="section-title">The Quiet Expert</h2>
-          <p class="section-lead">
-            I'm <strong>Favour Osofisan</strong>, a developer focused on building websites and web
-            apps that feel clear, modern, and useful. I work across frontend design, backend
-            integrations, ecommerce flows, and AI-powered features when a product needs them.
-          </p>
+      </div>
+    </section>
 
-          <div class="about-layout">
-            <div class="about-cards">
-              <article class="mini-card">
-                <div class="mini-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v9A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
-                    <path d="M8 21h8M10 18v3M14 18v3M4 8h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                  </svg>
-                </div>
-                <h3>Web Builder</h3>
-                <p>Websites, web apps, ecommerce flows, and AI features that solve real product problems.</p>
-              </article>
-              <article class="mini-card">
-                <div class="mini-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <path d="M8 4h8l4 4v12H4V4h4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                    <path d="M16 4v4h4M8 13l-2 2 2 2M16 13l2 2-2 2M13 12l-2 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h3>Full Stack</h3>
-                <p>Responsive, fast, SEO-optimized web applications — React, Node, TypeScript, and Supabase.</p>
-              </article>
-              <article class="mini-card">
-                <div class="mini-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.8"/>
-                    <path d="M8 8h8M8 12h5M8 16h3M15.5 14.5l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h3>Product &amp; Design</h3>
-                <p>UI/UX, wireframes, and interfaces that make websites and apps feel trustworthy and accessible.</p>
-              </article>
+    <!-- Approach -->
+    <section class="approach section" id="approach">
+      <div class="section-inner">
+        <h2 class="section-title">How I Work</h2>
+        <p class="section-lead centered">
+          I ship production-ready websites and web apps - fast, clean, and repeatable.
+          AI assists me at every stage, but I never let it replace judgment. I use it to move faster, not to cut
+          corners.
+        </p>
+        <h3 class="approach-subtitle">My workflow</h3>
+        <ol class="approach-steps">
+          <li class="approach-step card glow-card">
+            <span class="step-num">01</span>
+            <h3>Define</h3>
+            <p>Clarify the audience, core pages, user flows, and what the product must achieve.</p>
+          </li>
+          <li class="approach-step card glow-card">
+            <span class="step-num">02</span>
+            <h3>Prototype &amp; refine</h3>
+            <p>Turn the idea into a usable interface, test the flow, and refine the experience before scaling.</p>
+          </li>
+          <li class="approach-step card glow-card">
+            <span class="step-num">03</span>
+            <h3>Build &amp; integrate</h3>
+            <p>Connect frontend, backend, auth, data, ecommerce, and AI features where they add real value.</p>
+          </li>
+          <li class="approach-step card glow-card">
+            <span class="step-num">04</span>
+            <h3>Ship &amp; improve</h3>
+            <p>Deploy, review real usage, and improve the features that matter most.</p>
+          </li>
+        </ol>
+        <div class="approach-notes">
+          <article class="approach-note card glow-card">
+            <h3>AI-assisted, human-directed</h3>
+            <p>I use AI to generate boilerplate, refactor code, and write documentation - cutting development time
+              significantly.</p>
+            <p>I review every diff, fix what the AI misses, and maintain full control over architecture and user
+              experience.</p>
+            <p>The result: faster delivery without sacrificing quality or clarity.</p>
+          </article>
+          <article class="approach-note card glow-card">
+            <h3>Built to last</h3>
+            <p>Every project is responsive, accessible, and optimized for real users - not just for portfolios.</p>
+            <p>I work across the full stack: frontend, backend, ecommerce, and practical AI integrations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="section-inner">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">Outcome-driven AI &amp; Software Solutions</h2>
+        <p class="section-lead">
+          I build intelligent digital systems designed to streamline operations, cut costs, and unlock new revenue
+          streams.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
             </div>
+            <h3>AI Business Automation</h3>
+            <p>Streamline operational workflows, reduce manual data entry, and connect your business systems with
+              intelligent AI pipelines.</p>
+            <a class="service-link" href="#contact">Discuss Automation</a>
+          </article>
 
-            <aside class="code-panel" aria-label="Profile code snippet">
-              <div class="code-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="code-filename">profile.js</span>
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                <path d="M8 10h.01M12 10h.01M16 10h.01" />
+              </svg>
+            </div>
+            <h3>AI Assistants &amp; Chatbots</h3>
+            <p>Provide 24/7 customer support, qualify leads automatically, and handle queries instantly using
+              custom-trained AI chatbots.</p>
+            <a class="service-link" href="#contact">Deploy an Assistant</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 6l-9.5 9.5-5-5L1 18" />
+                <path d="M17 6h6v6" />
+              </svg>
+            </div>
+            <h3>Digital Transformation</h3>
+            <p>Modernize legacy systems, migrate processes to high-performance cloud infrastructure, and re-engineer
+              workflows for agility.</p>
+            <a class="service-link" href="#contact">Begin Modernization</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <rect x="7" y="7" width="3" height="9" />
+                <rect x="14" y="11" width="3" height="5" />
+              </svg>
+            </div>
+            <h3>Internal Dashboards</h3>
+            <p>Provide your team with real-time operational visibility, track key business metrics, and make decisions
+              with custom analytics portals.</p>
+            <a class="service-link" href="#contact">Build a Dashboard</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Modern Company Websites</h3>
+            <p>Establish a premium brand presence, educate prospective buyers, and capture high-intent leads with fast,
+              SEO-optimized sites.</p>
+            <a class="service-link" href="#contact">Build Website</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+              </svg>
+            </div>
+            <h3>SaaS Platforms</h3>
+            <p>Launch scalable software products featuring secure payments, robust multi-tenant management, and reliable
+              cloud performance.</p>
+            <a class="service-link" href="#contact">Launch your SaaS</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3>AI Integration</h3>
+            <p>Embed OpenAI, Claude, or custom LLMs directly into your existing software workflows to automate
+              summarization and decision-making.</p>
+            <a class="service-link" href="#contact">Integrate AI</a>
+          </article>
+
+          <article class="service-card card glow-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+                <line x1="12" y1="2" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3>Workflow Automation</h3>
+            <p>Connect CRM, email lists, databases, and billing tools into seamless, automated pipelines that eliminate
+              human error.</p>
+            <a class="service-link" href="#contact">Automate Workflows</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Build Section -->
+    <section class="build section section-tint" id="what-i-build">
+      <div class="section-inner">
+        <p class="section-label">Solutions</p>
+        <h2 class="section-title">What I Build</h2>
+        <p class="section-lead">
+          I design and engineer intelligent digital systems that solve complex business operations.
+        </p>
+
+        <div class="build-grid">
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
+            <h3>AI Assistants</h3>
+            <p>Custom chatbots, customer service agents, and automated query-handling systems.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3>Business Automation</h3>
+            <p>Operational pipelines, custom APIs, automated scheduling, and CRM integrations.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="9" y1="3" x2="9" y2="21" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+              </svg>
+            </div>
+            <h3>Internal Dashboards</h3>
+            <p>Admin consoles, secure operations dashboards, and database controllers.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2z" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3>AI Integrations</h3>
+            <p>RAG pipelines, custom LLM agents, and semantic database semantic searches.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Customer Portals</h3>
+            <p>Self-service user portals, billing platforms, and document delivery channels.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Company Websites</h3>
+            <p>High-speed company homepages, SEO funnels, and brand-building portals.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+            </div>
+            <h3>SaaS Products</h3>
+            <p>Multi-tenant web applications with role-based auth, payments, and dashboards.</p>
+          </article>
+
+          <article class="build-card card glow-card">
+            <div class="build-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <h3>Analytics Platforms</h3>
+            <p>Commercial performance trackers, live logs, and database metrics systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="stack section section-tint" id="stack">
+      <div class="section-inner">
+        <p class="section-label">Toolkit</p>
+        <h2 class="section-title">Stack &amp; expertise</h2>
+        <div class="stack-grid">
+          <article class="info-card card glow-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v9A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-9Z"
+                  stroke="currentColor" stroke-width="1.8" />
+                <path d="M4 8h16M9 18v3M15 18v3M8 21h8" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Websites &amp; Web Apps</h3>
+            <p>Responsive marketing sites, portfolio sites, business websites, and practical web applications.</p>
+            <div class="tag-row">
+              <span>OpenAI</span><span>Agents</span><span>RAG</span>
+            </div>
+          </article>
+          <article class="info-card card glow-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M13 3 5 14h6l-1 7 9-12h-6l1-6Z" stroke="currentColor" stroke-width="1.8"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Automation</h3>
+            <p>AI-assisted dev workflows and product automation without cutting corners.</p>
+            <div class="tag-row">
+              <span>Cursor</span><span>Bolt.new</span><span>Replit</span><span>Visual Studio Code</span>
+            </div>
+          </article>
+          <article class="info-card card glow-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Full-Stack Web</h3>
+            <p>Production apps with HTML, CSS, JavaScript, Python, Supabase, and modern backend tooling.</p>
+            <div class="tag-row">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Supabase</span><span>Firebase</span>
+            </div>
+          </article>
+          <article class="info-card card glow-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z"
+                  stroke="currentColor" stroke-width="1.8" />
+                <path d="M8 8h8M8 12h5M8 16h3M15.5 14.5l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Product &amp; Design</h3>
+            <p>Trustworthy AI interfaces - loading states, errors, and flows for every user.</p>
+            <div class="tag-row">
+              <span>UI/UX</span><span>Figma</span><span>Google Stitch</span><span>Prototyping</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Work -->
+    <!-- Featured Work (Case Studies) -->
+    <section class="work section" id="work">
+      <div class="section-inner">
+        <p class="section-label">Case Studies</p>
+        <h2 class="section-title">AI-Powered Business Solutions</h2>
+        <p class="section-lead">
+          Real projects, real problems, real impact - presented as structured case studies to show how I think and what
+          I deliver.
+        </p>
+
+        <div class="projects-list">
+          <!-- Wellora -->
+          <article class="project-showcase card glow-card" data-category="web">
+            <div class="project-media">
+              <img class="project-logo" src="images/wellora%20logo.png" alt="Wellora logo" />
+            </div>
+            <div class="project-body">
+              <div class="tag-row tag-row--tech">
+                <span class="tag tag-next">PWA</span>
+                <span class="tag tag-tailwind">Voice AI</span>
+                <span class="tag tag-ai">OpenAI</span>
+                <span class="tag tag-vercel">Healthcare</span>
               </div>
-              <pre><code><span class="tok-keyword">const</span> profile = {
-  <span class="tok-key">name</span>: <span class="tok-string">"Favour Osofisan"</span>,
-  <span class="tok-key">role</span>: <span class="tok-string">"Websites &amp; Web Apps Developer"</span>,
-  <span class="tok-key">skills</span>: [<span class="tok-string">"HTML"</span>, <span class="tok-string">"CSS"</span>, <span class="tok-string">"JavaScript"</span>, <span class="tok-string">"Node"</span>, <span class="tok-string">"OpenAI"</span>],
-  <span class="tok-key">mission</span>: <span class="tok-string">"Build useful digital products"</span>,
-  <span class="tok-key">availability</span>: <span class="tok-string">"Open to new opportunities"</span>
-};</code></pre>
-            </aside>
-          </div>
+              <h3>Wellora - AI-First Senior Wellness Platform</h3>
+              <p><strong>Problem:</strong> Older adults struggle to maintain physical independence due to limited access
+                to accessible, personalized wellness guidance.</p>
+              <p><strong>Solution:</strong> Designed and developed an AI-powered wellness platform focused on mobility,
+                voice-controlled navigation, personalized exercise experiences, and intuitive user journeys built for
+                users 50+.</p>
+              <ul class="check-list">
+                <li>AI-driven personalization and weekly journal summaries</li>
+                <li>Voice navigation and hands-free exercise coaching</li>
+                <li>Modern accessible UX with caregiver PDF reports</li>
+                <li>Scalable PWA architecture with offline support</li>
+              </ul>
+              <div class="tag-row" style="margin-bottom: 1rem;">
+                <span>Next.js</span><span>Supabase</span><span>OpenAI</span><span>Netlify</span>
+              </div>
+              <div class="project-links">
+                <a class="link-primary" href="wellora-case-study/">View case study →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- DE GLEE Beauty Ecommerce -->
+          <article class="project-showcase card glow-card" data-category="web">
+            <div class="project-media project-media--gradient project-media--pink">
+              <img class="project-logo" src="DEGLEE%20logo.jpeg" alt="DE GLEE logo" />
+            </div>
+            <div class="project-body">
+              <div class="tag-row tag-row--tech">
+                <span class="tag tag-node">Node.js</span>
+                <span class="tag tag-html">E-commerce</span>
+                <span class="tag tag-css">Beauty</span>
+              </div>
+              <h3>DE GLEE - Luxury Beauty Ecommerce Platform</h3>
+              <p><strong>Problem:</strong> Luxury beauty brands face high marketplace fees, limited brand control, and
+                poor mobile shopping experiences on generic platforms.</p>
+              <p><strong>Solution:</strong> Built a fully custom mobile-first storefront with secure customer
+                authentication, persistent cart, and owner-controlled product management - zero marketplace dependency.
+              </p>
+              <ul class="check-list">
+                <li>0% marketplace fees - full revenue ownership</li>
+                <li>Secure customer auth and admin CRUD dashboard</li>
+                <li>95+ Lighthouse performance score</li>
+                <li>Simple deployment with no build pipeline required</li>
+              </ul>
+              <div class="tag-row" style="margin-bottom: 1rem;">
+                <span>Node.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+              </div>
+              <div class="project-links">
+                <a class="link-primary" href="de-glee-case-study.html">View case study →</a>
+                <a class="link-muted" href="https://de-glee-e-commerce-website.vercel.app/" target="_blank"
+                  rel="noreferrer">Live website</a>
+              </div>
+            </div>
+          </article>
 
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Approach -->
-      <section class="approach section" id="approach">
-        <div class="section-inner">
-          <h2 class="section-title">How I Work</h2>
-          <p class="section-lead centered">
-            I ship production-ready websites and web apps - fast, clean, and repeatable.
-            AI assists me at every stage, but I never let it replace judgment. I use it to move faster, not to cut corners.
-          </p>
-          <h3 class="approach-subtitle">My workflow</h3>
-          <ol class="approach-steps">
-            <li class="approach-step card">
-              <span class="step-num">01</span>
-              <h3>Define</h3>
-              <p>Clarify the audience, core pages, user flows, and what the product must achieve.</p>
-            </li>
-            <li class="approach-step card">
-              <span class="step-num">02</span>
-              <h3>Prototype &amp; refine</h3>
-              <p>Turn the idea into a usable interface, test the flow, and refine the experience before scaling.</p>
-            </li>
-            <li class="approach-step card">
-              <span class="step-num">03</span>
-              <h3>Build &amp; integrate</h3>
-              <p>Connect frontend, backend, auth, data, ecommerce, and AI features where they add real value.</p>
-            </li>
-            <li class="approach-step card">
-              <span class="step-num">04</span>
-              <h3>Ship &amp; improve</h3>
-              <p>Deploy, review real usage, and improve the features that matter most.</p>
-            </li>
-          </ol>
-          <div class="approach-notes">
-            <article class="approach-note card">
-              <h3>AI-assisted, human-directed</h3>
-              <p>I use AI to generate boilerplate, refactor code, and write documentation - cutting development time significantly.</p>
-              <p>I review every diff, fix what the AI misses, and maintain full control over architecture and user experience.</p>
-              <p>The result: faster delivery without sacrificing quality or clarity.</p>
-            </article>
-            <article class="approach-note card">
-              <h3>Built to last</h3>
-              <p>Every project is responsive, accessible, and optimized for real users - not just for portfolios.</p>
-              <p>I work across the full stack: frontend, backend, ecommerce, and practical AI integrations.</p>
-            </article>
+    <!-- Who I Work With (Industries) -->
+    <section class="section" id="industries">
+      <div class="section-inner">
+        <p class="section-label">Clientele</p>
+        <h2 class="section-title">Who I Work With</h2>
+        <p class="section-lead">
+          I partner with ambitious organizations across industries who are ready to leverage AI and modern software as a
+          strategic advantage.
+        </p>
+        <div class="industries-grid">
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <span>Agriculture</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <span>Healthcare</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <span>Education</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <span>SMEs</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </div>
+            <span>Startups</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </div>
+            <span>Founders</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <span>Enterprise Teams</span>
+          </div>
+          <div class="industry-card glow-card">
+            <div class="industry-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <span>Startup Brand Owners</span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Services -->
-      <section class="services section" id="services">
-        <div class="section-inner">
-          <p class="section-label">Services</p>
-          <h2 class="section-title">Clear builds for businesses, founders, and product ideas</h2>
-          <p class="section-lead">
-            I help turn ideas into polished websites and web apps with the right mix of design,
-            frontend development, backend setup, and practical AI features.
-          </p>
+    <!-- Credentials & Certifications -->
+    <section class="certifications section section-tint" id="certifications">
+      <div class="section-inner">
+        <p class="section-label">Achievements</p>
+        <h2 class="section-title">Credentials &amp; Recognition</h2>
+        <p class="section-lead">
+          Official proof of dedication, professional development, and technical expertise.
+        </p>
 
-          <div class="services-grid">
-            <article class="service-card card">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v9A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M8 21h8M10 18v3M14 18v3M4 8h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
+        <div class="certifications-grid">
+          <article class="certificate-card card glow-card tilt-3d" id="cert-card-trigger">
+            <div class="certificate-badge">Certificate of Participation</div>
+            <div class="certificate-frame">
+              <img class="certificate-image" src="images/certificate of participation.jpeg"
+                alt="Certificate of Participation" loading="lazy" />
+              <div class="certificate-overlay">
+                <span class="zoom-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 15l6 6m-6-6a9 9 0 111.5-1.5M10 7v6m-3-3h6" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Click to enlarge
+                </span>
               </div>
-              <h3>Website Landing Pages</h3>
-              <p>Clean landing pages for personal brands, services, portfolios, and small businesses.</p>
-              <a class="service-link" href="#contact">Request a landing page</a>
-            </article>
-
-            <article class="service-card card">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 7h16M7 7V5h10v2M6 7l1 13h10l1-13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9 11h6M9 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Ecommerce Storefronts</h3>
-              <p>Product pages, carts, checkout flows, admin-friendly catalog structures, and polished shopping UX.</p>
-              <a class="service-link" href="#work">See ecommerce work</a>
-            </article>
-
-            <article class="service-card card">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 5h14v14H5V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9 9h6M9 13h6M9 17h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Web App MVPs</h3>
-              <p>Usable product prototypes with real flows, responsive interfaces, data handling, and deployment support.</p>
-              <a class="service-link" href="#contact">Plan an MVP</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stack -->
-      <section class="stack section section-tint" id="stack">
-        <div class="section-inner">
-          <p class="section-label">Toolkit</p>
-          <h2 class="section-title">Stack &amp; expertise</h2>
-          <div class="stack-grid">
-            <article class="info-card card">                          
-              <div class="card-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v9A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M4 8h16M9 18v3M15 18v3M8 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Websites &amp; Web Apps</h3>
-              <p>Responsive marketing sites, portfolio sites, business websites, and practical web applications.</p>
+            </div>
+            <div class="certificate-details">
+              <h3>Certificate of Participation</h3>
+              <p class="certificate-meta">Issued for active participation and project delivery in the software engineer
+                track.</p>
               <div class="tag-row">
-                <span>OpenAI</span><span>Agents</span><span>RAG</span>
+                <span>Software Engineering</span><span>Development</span><span>Practical Skillset</span>
               </div>
-            </article>
-            <article class="info-card card">
-              <div class="card-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M13 3 5 14h6l-1 7 9-12h-6l1-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Automation</h3>
-              <p>AI-assisted dev workflows and product automation without cutting corners.</p>
-              <div class="tag-row">
-                <span>Cursor</span><span>Bolt.new</span><span>Replit</span><span>Visual Studio Code</span>
-              </div>
-            </article>
-            <article class="info-card card">
-              <div class="card-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Full-Stack Web</h3>
-              <p>Production apps with HTML, CSS, JavaScript, Python, Supabase, and modern backend tooling.</p>
-              <div class="tag-row">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Supabase</span><span>Firebase</span>
-              </div>
-            </article>
-            <article class="info-card card">
-              <div class="card-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M8 8h8M8 12h5M8 16h3M15.5 14.5l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Product &amp; Design</h3>
-              <p>Trustworthy AI interfaces - loading states, errors, and flows for every user.</p>
-              <div class="tag-row">
-                <span>UI/UX</span><span>Figma</span><span>Google Stitch</span><span>Prototyping</span>
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Featured Work -->
-      <section class="work section" id="work">
-        <div class="section-inner">
-          <h2 class="section-title">Featured Work</h2>
-          <p class="section-lead">
-            A selection of website and web app projects focused on usability, performance, and user-centered design.
-          </p>
-
-          <div class="projects-list">
-            <!-- Wellora -->
-            <article class="project-showcase card" data-category="web">
-              <div class="project-media">
-                <img
-                  class="project-logo"
-                  src="images/wellora%20logo.png"
-                  alt="Wellora logo"
-                />
-              </div>
-              <div class="project-body">
-                <div class="tag-row tag-row--tech">
-                  <span class="tag tag-next">PWA</span>
-                  <span class="tag tag-tailwind">Voice</span>
-                  <span class="tag tag-ai">AI</span>
-                  <span class="tag tag-vercel">UX</span>
-                </div>
-                <h3>Wellora - AI-First Senior Wellness PWA</h3>
-                <p>
-                  A wellness app concept helping seniors stay active through guided movement routines —
-                  accessibility-first, calm, and supportive experience design.
-                </p>
-                <ul class="check-list">
-                  <li>Accessibility-first interface design</li>
-                  <li>Guided daily mobility routines</li>
-                  <li>Gentle, beginner-friendly movements</li>
-                  <li>End-to-end product case study</li>
-                </ul>
-                <div class="project-links">
-                  <a class="link-primary" href="wellora-case-study/">View case study →</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- DE GLEE Beauty Ecommerce -->
-            <article class="project-showcase card" data-category="web">
-              <div class="project-media project-media--gradient project-media--pink">
-                <img
-                  class="project-logo"
-                  src="DEGLEE%20logo.jpeg"
-                  alt="DE GLEE logo"
-                />
-              </div>
-              <div class="project-body">
-                <div class="tag-row tag-row--tech">
-                  <span class="tag tag-node">Node.js</span>
-                  <span class="tag tag-html">HTML</span>
-                  <span class="tag tag-css">CSS</span>
-                </div>
-                <h3>DE GLEE Beauty Ecommerce</h3>
-                <p>
-                  Mobile-first luxury storefront for skincare and body care with secure customer
-                  login, cart persistence, and protected owner product management.
-                </p>
-                <ul class="check-list">
-                  <li>Responsive, mobile-first ecommerce experience</li>
-                  <li>Customer auth, cart persistence, and JSON-backed storage</li>
-                  <li>Admin dashboard with protected product CRUD and uploads</li>
-                </ul>
-                <div class="project-links">
-                  <a class="link-primary" href="de-glee-case-study.html">View case study →</a>
-                  <a class="link-muted" href="https://de-glee-e-commerce-website.vercel.app/" target="_blank" rel="noreferrer">Live website</a>
-                </div>
-              </div>
-            </article>
-          </div>
+    <!-- CTA -->
+    <section class="cta section" id="contact">
+      <div class="cta-card">
+        <h2>Ready to transform your business with AI?</h2>
+        <p>
+          Whether you need AI automation, a custom chatbot, a SaaS platform, or a premium company website,
+          let's have a 30-minute discovery call to explore how I can help your business grow.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; margin-bottom:1.25rem;">
+          <a class="btn btn-cta" href="tel:+2347064020576">📞 Call +234 706 402 0576</a>
+          <a class="btn btn-cta" href="tel:+2349052624072">📞 Call +234 905 262 4072</a>
         </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="cta section" id="contact">
-        <div class="cta-card">
-          <h2>Ready to build a website or web app?</h2>
-          <p>
-            Whether you need a business website, ecommerce storefront, portfolio, or web app, I'm open
-            to freelance projects, collaborations, and roles where strong web development is valued.
-          </p>
-          <a class="btn btn-cta" href="mailto:favourosofisan@gmail.com">Get in touch</a>
-          <div class="cta-social">
-            <a href="https://github.com/favourosofisan-dev" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://wa.me/message/AQPFMPMAICJSE1" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a href="mailto:favourosofisan@gmail.com">Email</a>
-          </div>
+        <div class="cta-social">
+          <a href="https://wa.me/2347064020576?text=Hi%20Favour%2C%20I'd%20like%20to%20book%20a%20discovery%20call"
+            target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="mailto:favourosofisan@gmail.com">Email</a>
+          <a href="https://github.com/favourosofisan-dev" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <a class="brand brand--footer" href="#hero">
-        <span class="brand-icon brand-photo" aria-hidden="true"></span>
-        <span class="brand-text">Favour AI First Software Engineer</span>
-      </a>
-      <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
-        <div>
-          <h2 id="footer-newsletter-title">Newsletter</h2>
-          <p>Get occasional notes from Favour on web apps, AI tools, and portfolio builds.</p>
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="#hero">
+      <span class="brand-icon brand-photo" aria-hidden="true"></span>
+      <span class="brand-text">Favour Osofisan | AI Software Engineer</span>
+    </a>
+    <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
+      <div>
+        <h2 id="footer-newsletter-title">Newsletter</h2>
+        <p>Get occasional insights from Favour on AI, business automation, and digital transformation strategy.</p>
+      </div>
+      <form class="footer-newsletter-form" data-newsletter-form>
+        <label for="footer-newsletter-email">Email address</label>
+        <div class="footer-newsletter-row">
+          <input id="footer-newsletter-email" name="email" type="email" autocomplete="email"
+            placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
         </div>
-        <form class="footer-newsletter-form" data-newsletter-form>
-          <label for="footer-newsletter-email">Email address</label>
-          <div class="footer-newsletter-row">
-            <input id="footer-newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+        <label class="consent-check" for="footer-newsletter-consent">
+          <input id="footer-newsletter-consent" name="consent" type="checkbox"
+            value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)."
+            required />
+          <span>I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime).</span>
+        </label>
+        <p class="newsletter-message" data-newsletter-message role="status" aria-live="polite"></p>
+        <a class="privacy-link" href="privacy.html">Privacy Policy</a>
+      </form>
+    </section>
+    <p>&copy; <span id="year"></span> Favour Osofisan - AI Software Engineer. All rights reserved.
+    </p>
+    <nav class="footer-nav" aria-label="Social links">
+      <a href="https://github.com/favourosofisan-dev" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://wa.me/2347064020576" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a href="mailto:favourosofisan@gmail.com">Email</a>
+    </nav>
+  </footer>
+
+  <!-- Ambient Background Blobs -->
+  <div class="ambient-glow ambient-glow--1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--3" aria-hidden="true"></div>
+
+  <!-- Newsletter Popup Modal -->
+  <div id="newsletter-popup" class="newsletter-popup-overlay" aria-hidden="true">
+    <div class="newsletter-popup-card glow-card" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <button class="newsletter-popup-close" id="close-popup-btn" aria-label="Close newsletter popup">&times;</button>
+      <div class="newsletter-popup-decor" aria-hidden="true"></div>
+      <div class="newsletter-popup-content">
+        <span class="badge">Stay Informed</span>
+        <h2 id="popup-title-modal">Join the Newsletter</h2>
+        <p>Get occasional notes from Favour on web apps, AI tools, and full-stack engineering builds.</p>
+
+        <form class="newsletter-popup-form" data-newsletter-form>
+          <div class="newsletter-popup-row">
+            <input id="popup-newsletter-email" name="email" type="email" autocomplete="email"
+              placeholder="you@example.com" required />
             <button type="submit">Subscribe</button>
           </div>
-          <label class="consent-check" for="footer-newsletter-consent">
-            <input id="footer-newsletter-consent" name="consent" type="checkbox" value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)." required />
-            <span>I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime).</span>
+          <label class="consent-check" for="popup-newsletter-consent">
+            <input id="popup-newsletter-consent" name="consent" type="checkbox"
+              value="I agree to receive occasional emails from Favour Osofisan (no spam, unsubscribe anytime)."
+              required />
+            <span>I agree to receive occasional updates (no spam).</span>
           </label>
           <p class="newsletter-message" data-newsletter-message role="status" aria-live="polite"></p>
-          <a class="privacy-link" href="privacy.html">Privacy Policy</a>
         </form>
-      </section>
-      <p>&copy; <span id="year"></span> Favour Osofisan - The Quiet Expert. All rights reserved.</p>
-      <nav class="footer-nav" aria-label="Social links">
-        <a href="https://github.com/favourosofisan-dev" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://wa.me/message/AQPFMPMAICJSE1" target="_blank" rel="noreferrer">WhatsApp</a>
-        <a href="mailto:favourosofisan@gmail.com">Email</a>
-      </nav>
-    </footer>
+      </div>
+    </div>
+  </div>
 
-    <script src="supabase-config.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- Certificate Lightbox Modal -->
+  <div id="certificate-lightbox" class="lightbox-overlay" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Certificate Full View">
+    <button class="lightbox-close" id="close-lightbox-btn" aria-label="Close certificate image">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="Full size certificate" />
+    </div>
+  </div>
+
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

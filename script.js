@@ -109,6 +109,14 @@ newsletterForms.forEach((form) => {
           message.className = "newsletter-message is-success";
         }
         form.reset();
+        const parentPopup = form.closest("#newsletter-popup");
+        if (parentPopup) {
+          setTimeout(() => {
+            parentPopup.classList.remove("is-visible");
+            parentPopup.setAttribute("aria-hidden", "true");
+            localStorage.setItem("newsletter_popup_dismissed", "true");
+          }, 2000);
+        }
         return;
       }
 
@@ -121,6 +129,14 @@ newsletterForms.forEach((form) => {
         message.className = "newsletter-message is-success";
       }
       form.reset();
+      const parentPopup = form.closest("#newsletter-popup");
+      if (parentPopup) {
+        setTimeout(() => {
+          parentPopup.classList.remove("is-visible");
+          parentPopup.setAttribute("aria-hidden", "true");
+          localStorage.setItem("newsletter_popup_dismissed", "true");
+        }, 2000);
+      }
     } catch (error) {
       console.error("Newsletter signup failed.", error);
       if (message) {
@@ -154,4 +170,118 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => observer.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
+/* ==========================================================================
+   Premium UI/UX Interactions Engine
+   ========================================================================== */
+
+// 1. Glow Cards spotlight coordinate tracker
+const glowCards = document.querySelectorAll(".glow-card");
+glowCards.forEach((card) => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  });
+});
+
+// 2. 3D Mouse Tilt effect
+const tiltElements = document.querySelectorAll(".tilt-3d");
+tiltElements.forEach((el) => {
+  el.addEventListener("mousemove", (e) => {
+    const rect = el.getBoundingClientRect();
+    // Normalise mouse position relative to card center (-0.5 to 0.5)
+    const xVal = (e.clientX - rect.left) / rect.width - 0.5;
+    const yVal = (e.clientY - rect.top) / rect.height - 0.5;
+    
+    // Smooth rotate angles (keep subtle, max 10 degrees for elegance)
+    const rotateX = -(yVal * 10).toFixed(2);
+    const rotateY = (xVal * 10).toFixed(2);
+    
+    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  });
+
+  el.addEventListener("mouseleave", () => {
+    el.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+  });
+});
+
+// 3. Certificate Lightbox functionality
+const certTrigger = document.getElementById("cert-card-trigger");
+const lightbox = document.getElementById("certificate-lightbox");
+const lightboxImg = document.getElementById("lightbox-image");
+const closeLightboxBtn = document.getElementById("close-lightbox-btn");
+
+if (certTrigger && lightbox && lightboxImg) {
+  const certImg = certTrigger.querySelector(".certificate-image");
+
+  const openLightbox = () => {
+    if (certImg) {
+      lightboxImg.src = certImg.src;
+      lightbox.classList.add("is-visible");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("is-visible");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  certTrigger.addEventListener("click", openLightbox);
+  
+  if (closeLightboxBtn) {
+    closeLightboxBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
+  
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target.classList.contains("lightbox-content")) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("is-visible")) {
+      closeLightbox();
+    }
+  });
+}
+
+// 4. Newsletter Popup logic
+const popup = document.getElementById("newsletter-popup");
+const closePopupBtn = document.getElementById("close-popup-btn");
+
+if (popup) {
+  const isDismissed = localStorage.getItem("newsletter_popup_dismissed") === "true";
+
+  if (!isDismissed) {
+    setTimeout(() => {
+      popup.classList.add("is-visible");
+      popup.setAttribute("aria-hidden", "false");
+    }, 5000); // 5 seconds delay
+  }
+
+  const closePopup = () => {
+    popup.classList.remove("is-visible");
+    popup.setAttribute("aria-hidden", "true");
+    localStorage.setItem("newsletter_popup_dismissed", "true");
+  };
+
+  if (closePopupBtn) {
+    closePopupBtn.addEventListener("click", closePopup);
+  }
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      closePopup();
+    }
+  });
 }
