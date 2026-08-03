@@ -47,16 +47,18 @@
 
           <h2>What Data Is Collected</h2>
           <p>
-            If you choose to subscribe to the newsletter, the only personal data requested is
-            your email address. Newsletter signup is optional and is not required to view or
-            use the website.
+            If you choose to subscribe to the newsletter, the requested data is your email
+            address and, optionally, your business name. Newsletter signup is optional and is
+            not required to view or use the website.
           </p>
 
           <h2>How The Data Is Used</h2>
           <p>
             Your email address is used only to send occasional updates from Favour Osofisan,
             such as notes about web apps, AI tools, portfolio builds, and related project work.
-            Newsletter signups are stored in a Supabase database connected to this website.
+            Your business name may be used to understand the type of organization signing up
+            and personalize relevant follow-up. Newsletter signups are stored in a Supabase
+            database connected to this website.
           </p>
 
           <h2>Consent</h2>
@@ -68,13 +70,13 @@
 
           <h2>Sharing And Selling</h2>
           <p>
-            Your email address is not sold, rented, or shared with third parties for marketing
-            purposes.
+            Your email address and business name are not sold, rented, or shared with third
+            parties for marketing purposes.
           </p>
 
           <h2>Unsubscribing Or Requesting Deletion</h2>
           <p>
-            You can unsubscribe at any time or request deletion of your email address by
+            You can unsubscribe at any time or request deletion of your signup information by
             emailing <a class="link-primary" href="mailto:favourosofisan@gmail.com">favourosofisan@gmail.com</a>.
           </p>
 
@@ -98,6 +100,8 @@
           <p>Get occasional notes from Favour on web apps, AI tools, and portfolio builds.</p>
         </div>
         <form class="footer-newsletter-form" data-newsletter-form>
+          <label for="footer-newsletter-business">Business name</label>
+          <input class="newsletter-text-input" id="footer-newsletter-business" name="business_name" type="text" autocomplete="organization" placeholder="Your business name" />
           <label for="footer-newsletter-email">Email address</label>
           <div class="footer-newsletter-row">
             <input id="footer-newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />

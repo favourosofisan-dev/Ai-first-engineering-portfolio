@@ -1002,6 +1002,22 @@ main {
   font-weight: 700;
 }
 
+.newsletter-text-input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+
+.newsletter-text-input:focus {
+  outline: 3px solid rgba(124, 58, 237, 0.16);
+  border-color: var(--purple);
+}
+
 .footer-newsletter-row {
   display: grid;
   gap: 0.65rem;

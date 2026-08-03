@@ -62,10 +62,12 @@ newsletterForms.forEach((form) => {
     event.preventDefault();
 
     const config = window.NEWSLETTER_SUPABASE;
+    const businessNameInput = form.querySelector('input[name="business_name"]');
     const emailInput = form.querySelector('input[name="email"]');
     const consentInput = form.querySelector('input[name="consent"]');
     const message = form.querySelector("[data-newsletter-message]");
     const submitButton = form.querySelector('button[type="submit"]');
+    const businessName = businessNameInput ? businessNameInput.value.trim() : "";
     const email = emailInput ? emailInput.value.trim().toLowerCase() : "";
 
     if (!form.reportValidity()) {
@@ -96,6 +98,7 @@ newsletterForms.forEach((form) => {
         },
         body: JSON.stringify({
           email,
+          business_name: businessName || null,
           consent_given: Boolean(consentInput && consentInput.checked),
           consent_text: consentText,
           source_page: window.location.pathname,

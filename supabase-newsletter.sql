@@ -4,12 +4,16 @@ create extension if not exists pgcrypto;
 create table if not exists public.newsletter_subscribers (
   id uuid primary key default gen_random_uuid(),
   email citext not null unique,
+  business_name text,
   consent_given boolean not null default false,
   consent_text text not null,
   source_page text,
   user_agent text,
   created_at timestamptz not null default now()
 );
+
+alter table public.newsletter_subscribers
+add column if not exists business_name text;
 
 alter table public.newsletter_subscribers enable row level security;
 
